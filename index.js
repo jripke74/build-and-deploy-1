@@ -2,16 +2,16 @@
 // Replace the arguments below according to your preference.
 
 // space, scary, military, romantic, cowboy, fantasy, superhero
-favouriteMovieGenre("regular");
+favouriteMovieGenre("space");
 
 // watermelon, tomato, banana, orange, avocado, bluberry
-favouriteFruit("regular");
+favouriteFruit("avocado");
 
 // light, dark
-favouriteMode("light");
+favouriteMode("dark");
 
 // sharp, soft, round
-favouriteEdgeStyle("sharp");
+favouriteEdgeStyle("soft");
 
 /////////////////////////////////////
 // IGNORE THE CODE BELOW THIS LINE //
@@ -23,6 +23,22 @@ function setProp(prop, value) {
 
 function favouriteEdgeStyle(style) {
   setProp("--image", "var(--" + style + ")");
+}
+
+function favouriteMovieGenre(font) {
+  if (font) {
+    setProp("--font", "var(--" + font + ")");
+  }
+}
+
+function favouriteMode(mode) {
+  if (mode === "light" || !mode) {
+    setProp("--background", "var(--light)");
+    setProp("--text", "var(--dark)");
+  } else if (mode === "dark") {
+    setProp("--background", "var(--dark)");
+    setProp("--text", "var(--light)");
+  }
 }
 
 function favouriteFruit(theme) {

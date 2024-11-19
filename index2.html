@@ -1,55 +1,42 @@
-<!-- Build & deploy your first website > Aside: Description lists -->
+<!-- Build & deploy your first website > The basics of Semantic HTML -->
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Description lists</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Eurovision Song Contest</title>
   </head>
   <body>
-    <!-- Multiple terms and descriptions -->
-    <h2>Cryptids of Cornwall</h2>
-    <dl>
-      <dt>Beast of Bodmin</dt>
-      <dd>A large feline inhabiting Bodmin Moor.</dd>
+    <h1>Eurovision Song Contest 2023</h1>
+    <img src="eurovision.png" width="100%" />
 
-      <dt>Morgawr</dt>
-      <dd>A sea serpent</dd>
+    <h2>About the Event</h2>
+    <p>
+      Experience the excitement of the Eurovision Song Contest, an annual
+      celebration of music, diversity, and cultural spectacle. Join us for a
+      night of unforgettable performances and international camaraderie.
+    </p>
+    <time datetime="2023-05-13">May 13, 2023</time>
+    <address>
+      Liverpool Arena, Liverpool, United Kingdom<br />
+      <a href="mailto:infor@eurovision.com">info@eurovision.com</a>
+    </address>
+    <time>May 13, 2023</time>
+    <h2>Lineup</h2>
+    <ul>
+      <li>🇦🇽 Loreen - "Tatto"</li>
+      <li>🇫🇮 Kaarija = "Cha Cha Cha"</li>
+      <li>🇳🇴 Alessandra - Queen of Kings</li>
+    </ul>
 
-      <dt>Owlman</dt>
-      <dd>A giant owl-like creature.</dd>
-    </dl>
+    <h2>Register</h2>
+    <label for="name">Your Name:</label>
+    <input placeholder="E.g. Alexander Rybak" id="name" />
 
-    <!-- Multiple terms, single description -->
-    <h2>Snow monsters</h2>
+    <br />
 
-    <dl>
-      <dt>Yeti</dt>
-      <dd>An ape-like creature said to live in the Himalayas.</dd>
-    </dl>
+    <label for="newsletter">Subscribe to Eurovision newsletter</label>
+    <input type="checkbox" id="newsletter" />
 
-    <!-- Single term, multiple descriptions -->
-    <h2>Other</h2>
-    <dl>
-      <dt>Unicorn</dt>
-      <dd>A mythical, horse-like animal with a single horn.</dd>
-      <dd>Something which is desirable but difficult to obtain</dd>
-    </dl>
-
-    <!-- key-value pairs -->
-    <h2>Garfield</h2>
-    <dl>
-      <dt>Name</dt>
-      <dd>Garfield</dd>
-      <dt>Born</dt>
-      <dd>19 June 1978</dd>
-      <dt>Color</dt>
-      <dd>Orange</dd>
-      <dt>Loves</dt>
-      <dd>Lasagna</dd>
-      <dt>Hates</dt>
-      <dd>Mondays</dd>
-      <dt>Personality</dt>
-      <dd>Cynical</dd>
-    </dl>
+    <br />
+    <button>Sign me up!</button>
   </body>
 </html>
